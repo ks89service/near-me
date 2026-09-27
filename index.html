@@ -118,10 +118,10 @@
         }
         .hero-img {
             width: 100%;
-            height: 120px;
+            height: 55px;
             object-fit: cover;
-            border-radius: 8px;
-            margin: 8px 0 4px 0;
+            border-radius: 6px;
+            margin: 6px 0 2px 0;
             border: 1px solid rgba(212, 175, 55, 0.4);
         }
 
@@ -163,13 +163,13 @@
             margin-bottom: 4px;
         }
 
+        /* กำหนดขนาดรูปภาพหลักของการ์ดทุกใบให้สม่ำเสมอเท่ากัน */
         .img-responsive {
             width: 100%;
-            height: 100px;
-            aspect-ratio: 16 / 9;
+            height: 45px;
             object-fit: cover;
-            border-radius: 5px;
-            margin: 4px 0;
+            border-radius: 4px;
+            margin: 3px 0;
             background-color: #000000;
             border: 1px solid rgba(255, 255, 255, 0.1);
             display: block;
@@ -263,7 +263,7 @@
         .full-width-img {
             width: 100%;
             height: auto;
-            max-height: 500px;
+            max-height: 250px;
             object-fit: cover;
             border-radius: 8px;
             border: 1px solid rgba(212, 175, 55, 0.4);
@@ -392,8 +392,8 @@
         @media (min-width: 768px) {
             .container { padding: 0 12px; }
             .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-            .img-responsive { height: 130px; }
-            .hero-img { height: 160px; }
+            .img-responsive { height: 50px; }
+            .hero-img { height: 60px; }
             .card { padding: 10px; }
             .card h3 { font-size: 0.88rem; }
             .card ul li { font-size: 0.75rem; }
@@ -475,10 +475,10 @@
                     <a href="https://maps.google.com/?cid=123456789" target="_blank" rel="noopener" class="btn-sub-web">📍 ช่างปั๊มใกล้ฉัน</a>
                 </div>
 
-                <!-- การ์ดบริการพิเศษเพิ่มเติม -->
-                <div class="card" style="margin-top: 4px; padding: 6px;">
-                    <h3 style="font-size: 0.7rem;">⚙️ งานซ่อมตู้คอนโทรล</h3>
-                    <img src="service-control-panel.jpg" alt="ซ่อมตู้คอนโทรลปั๊มน้ำ" class="img-responsive" style="height: 70px;">
+                <!-- การ์ดงานซ่อมตู้คอนโทรล (ปรับขนาดรูปภาพและระยะขอบให้เท่ากับการ์ดจุดอื่น) -->
+                <div class="card">
+                    <h3>⚙️ งานซ่อมตู้คอนโทรล</h3>
+                    <img src="service-control-panel.jpg" alt="ซ่อมตู้คอนโทรลปั๊มน้ำ" class="img-responsive">
                     <ul>
                         <li>ตรวจเช็คระบบไฟ</li>
                         <li>เปลี่ยนอะไหล่แท้</li>
@@ -538,5 +538,4 @@
         </div>
     </div>
 </body>
-  </html>
-                  
+</html>
