@@ -118,7 +118,8 @@
         }
         .hero-img {
             width: 100%;
-            height: 55px;
+            height: auto;
+            max-height: 110px;
             object-fit: cover;
             border-radius: 6px;
             margin: 6px 0 2px 0;
@@ -163,15 +164,17 @@
             margin-bottom: 4px;
         }
 
-        /* กำหนดขนาดรูปภาพหลักของการ์ดทุกใบให้สม่ำเสมอเท่ากัน */
+        /* สัดส่วนรูปภาพการ์ดแบบอัตราส่วน 16:9 พอดีรูป ไม่โดนตัดแบนเกินไป */
         .img-responsive {
             width: 100%;
-            height: 45px;
+            aspect-ratio: 16 / 9;
+            height: auto;
+            max-height: 90px;
             object-fit: cover;
-            border-radius: 4px;
-            margin: 3px 0;
+            border-radius: 5px;
+            margin: 4px 0;
             background-color: #000000;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             display: block;
         }
 
@@ -251,7 +254,7 @@
             letter-spacing: 0.2px;
         }
 
-        /* 5. WORK GALLERY */
+        /* 5. WORK GALLERY (แสดงภาพผลงานเต็มรูป ไม่ถูกตัดขอบล่าง) */
         .work-section {
             background: rgba(18, 20, 26, 0.9);
             color: #ffffff;
@@ -263,8 +266,7 @@
         .full-width-img {
             width: 100%;
             height: auto;
-            max-height: 250px;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 8px;
             border: 1px solid rgba(212, 175, 55, 0.4);
             margin-top: 8px;
@@ -392,8 +394,8 @@
         @media (min-width: 768px) {
             .container { padding: 0 12px; }
             .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-            .img-responsive { height: 50px; }
-            .hero-img { height: 60px; }
+            .img-responsive { max-height: 110px; }
+            .hero-img { max-height: 140px; }
             .card { padding: 10px; }
             .card h3 { font-size: 0.88rem; }
             .card ul li { font-size: 0.75rem; }
@@ -475,7 +477,7 @@
                     <a href="https://maps.google.com/?cid=123456789" target="_blank" rel="noopener" class="btn-sub-web">📍 ช่างปั๊มใกล้ฉัน</a>
                 </div>
 
-                <!-- การ์ดงานซ่อมตู้คอนโทรล (ปรับขนาดรูปภาพและระยะขอบให้เท่ากับการ์ดจุดอื่น) -->
+                <!-- การ์ดงานซ่อมตู้คอนโทรล -->
                 <div class="card">
                     <h3>⚙️ งานซ่อมตู้คอนโทรล</h3>
                     <img src="service-control-panel.jpg" alt="ซ่อมตู้คอนโทรลปั๊มน้ำ" class="img-responsive">
